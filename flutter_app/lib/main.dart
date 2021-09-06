@@ -36,16 +36,26 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: myColor,
+        backgroundColor: Colors.white,
       ),
       //home: MyHomePage(title: ''),
       home: Scaffold(
         appBar: PreferredSize(
             // 
-            preferredSize: Size.fromHeight(7.0), // here the desired height
+            preferredSize: Size.fromHeight(4.0), // here the desired height
             child: AppBar(
-                // ...
+                
                 )),
-        body: Text(''), // ...
+        body: Column(children: [
+          Container(
+            child: Image.asset('../images/figma_logo.png'),
+            margin: EdgeInsets.only(left: 125, top: 5, bottom: 20),
+            height: 35,
+          ),
+          
+
+        ],),
+        backgroundColor: Colors.white,
       ),
     );
   }
