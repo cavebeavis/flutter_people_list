@@ -6,6 +6,7 @@ class AppDataTable extends StatelessWidget {
   final avatar = new Image.memory(Base64Decoder().convert(
       'iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAZpJREFUeF7t1cGpg0AABuH1lKN12H8LOQQsQsjNEgTBR3JICZkH+baBWWf2x2nf92vbtnGe53C+Z+B2u41lWca0rut1HMf3yEgfA/M8j+l+v1+cNAZeKxCgcf+mChDKFyCWL4AA/8BAfAX/AAFiAzHeAgSIDcR4CxAgNhDjLUCA2ECMtwABYgMx3gIEiA3EeAsQIDYQ4y1AgNhAjLcAAWIDMd4CBIgNxHgLECA2EOMtQIDYQIy3AAFiAzHeAgSIDcR4CxAgNhDjLUCA2ECMtwABYgMx3gIEiA3EeAsQIDYQ4y1AgNhAjLcAAWIDMd4CBIgNxHgLECA2EOMtQIDYQIy3AAFiAzHeAgSIDcR4CxAgNhDjLUCA2ECMtwABYgMx3gIEiA3EeAsQIDYQ4y1AgNhAjLcAAWIDMd4CBIgNxHgLECA2EOMtQIDYQIy3AAFiAzHeAgSIDcR4CxAgNhDjLUCA2ECMtwABYgMx3gIEiA3EeAsQIDYQ498LeDwe13me8VV+Ez/P85j2fb+ez+c4juM3LURf/Xr9y7KMP4fyV5bL7S44AAAAAElFTkSuQmCC'));
 
+  // code pulled from https://api.flutter.dev/flutter/material/DataTable-class.html and https://medium.com/flutterdevs/datatable-in-flutter-9242b4a19e67 
   @override
   Widget build(BuildContext context) {
     return DataTable(
